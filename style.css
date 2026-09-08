@@ -6,6 +6,8 @@
   --cream-2: #f3e6d8;
   --text: #3b2a20;
   --muted: #7a6a5c;
+  --accent-tint: rgba(169, 118, 93, 0.12);
+  --rule: rgba(59, 42, 32, 0.15);
 }
 
 * {
@@ -240,6 +242,43 @@ h1, h2, h3 {
 .price {
   font-weight: 700;
   color: var(--brown);
+}
+
+/* Diagrams (story / process / loyalty) */
+.diagram-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px 24px;
+  box-shadow: 0 8px 24px rgba(59, 42, 32, 0.06);
+  overflow-x: auto;
+}
+
+.diagram-card svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-width: 640px;
+}
+
+.timeline-section,
+.process-section,
+.loop-section {
+  padding: 100px 0;
+}
+
+.timeline-section h2,
+.process-section h2,
+.loop-section h2 {
+  font-size: 1.9rem;
+  margin-bottom: 40px;
+}
+
+.process-section {
+  background: var(--cream-2);
+}
+
+.loop-section {
+  background: var(--cream-2);
 }
 
 /* Location */
